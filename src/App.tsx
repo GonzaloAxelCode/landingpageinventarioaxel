@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-const APK_PATH = '/assets/inventarioaxelapp/0.4/apk/inventarioaxelapk.apk'
-const APP_VERSION = '0.4'
+const APK_PATH = '/assets/inventarioaxelapp/apk/inventarioaxelapk.apk'
+const APP_VERSION = 'v2'
 
 const features = [
   {
