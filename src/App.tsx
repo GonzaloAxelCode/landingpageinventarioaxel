@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
 // ── Configure these two before shipping ──────────────────────────────
-const APK_PATH = '/assets/inventarioaxelapp/apk/inventariov2.apk'
+const APK_PATH = 'https://drive.google.com/file/d/1AeeIwl-noS01Od43FRIZ2jpBq7IhPfPy/view?usp=sharing'
 const APP_VERSION = 'v2'
 const SYSTEM_URL = 'https://inventario-electronic-w7mn.vercel.app/app' // ← replace with your real system URL
 // ───────────────────────────────────────────────────────────────────
