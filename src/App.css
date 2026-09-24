@@ -49,11 +49,11 @@ body {
   letter-spacing: 0.01em;
 }
 
-.brand-mark {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--brass);
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* ── Track / panels ── */
@@ -202,27 +202,14 @@ body {
   gap: 1.1rem;
 }
 
-.scene-row {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.9rem;
-  color: var(--paper-dim);
+.scene-rows--neutral {
+  gap: 1rem;
 }
 
-.scene-row b {
-  margin-left: auto;
-  color: var(--paper);
-  font-weight: 600;
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.scene-row .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--brass);
-  flex: none;
+.skel {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--line);
 }
 
 .scene-phone {
@@ -250,14 +237,17 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 18px;
+  overflow: hidden;
   background: var(--brass);
-  color: var(--ink);
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scene-phone-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .scene-phone-label {
