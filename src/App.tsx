@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
-// ── Configure these two before shipping ──────────────────────────────
-const APK_PATH = '/assets/gonzafact/apk/gonzafact.apk'
+// ── APK alojado en servidor externo (R2) ─────────────────────────────
+const APK_PATH = 'https://pub-6b79c76579594222bdd6f486ae49157e.r2.dev/APKS/app-release.apk'
 const APP_VERSION = 'v3'
 const SYSTEM_URL = 'https://inventario-electronic-w7mn.vercel.app/app' // ← replace with your real system URL
 // ───────────────────────────────────────────────────────────────────
@@ -46,10 +46,10 @@ function App() {
   }, [active])
 
   const handleDownload = () => {
-    const link = document.createElement('a')
-    link.href = APK_PATH
-    link.download = `GonzaFact-${APP_VERSION}.apk`
-    link.click()
+    // Descarga cross-origin: el atributo `download` es ignorado fuera
+    // del mismo origen, así que abrimos la URL en una pestaña nueva
+    // para que el navegador / WebView de Android gestione el .apk.
+    window.open(APK_PATH, '_blank', 'noopener,noreferrer')
   }
 
   return (
